@@ -18,7 +18,7 @@ And you should see a message that says "Congratulations, you are all set for you
 ## How to Run
 
 ### Prerequisites
-- Node.js (version 24 recommended)
+- Node.js (v20.19.0 minimum, version 24 recommended)
 - npm (comes with Node.js)
 
 ### Installation and Development
