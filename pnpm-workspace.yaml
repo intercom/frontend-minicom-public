@@ -1,0 +1,7 @@
+# Supply-chain hardening config for pnpm.
+# Lives here (not package.json#pnpm) so minimumReleaseAge/trustPolicy are actually read —
+# they are silently inert under package.json#pnpm. trustPolicy was enabled after the lockfile
+# existed so it gates only future resolutions, not the already-vetted captured graph.
+onlyBuiltDependencies: []
+minimumReleaseAge: 10080
+trustPolicy: no-downgrade
