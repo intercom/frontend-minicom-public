@@ -19,18 +19,20 @@ And you should see a message that says "Congratulations, you are all set for you
 
 ### Prerequisites
 - Node.js (v24.10.0 minimum)
-- npm (comes with Node.js)
+- pnpm — installed automatically via Corepack (bundled with Node.js); no separate install needed
 
 ### Installation and Development
 
 1. **Install dependencies:**
+   This project uses [pnpm](https://pnpm.io). Corepack pins the correct version automatically:
    ```bash
-   npm install
+   corepack enable
+   pnpm install
    ```
 
 2. **Start the development server:**
    ```bash
-   npm run dev
+   pnpm dev
    ```
 
 3. **Open your browser:**
@@ -67,4 +69,4 @@ This setup provides Hot Module Replacement (HMR) for fast development and includ
 # Troubleshooting
 
 - Errors running the local dev server are often because of incompatible node versions. Check your node version and ensure you are on at least version 24. 
-- This project was last tested with node version 24.18.0 and npm version 10.2.0.
+- This project was last tested with node version 24.10.0 and pnpm version 10.23.0.
